@@ -1,5 +1,5 @@
 ---
-title: "standup"
+title: "Standup NLP"
 author: "David DeStephano"
 date: "March 28, 2020"
 output: html_document
@@ -8,3 +8,52 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r warning=FALSE}
+library(tidyverse)
+```
+
+
+Inspired by these projects, one comparing gender deifferences between commencement speeches, and the other compariring standup specials 
+
+https://towardsdatascience.com/using-nlp-to-explore-leadership-inspiration-f2e0b805d01c
+
+https://medium.com/nwamaka-imasogie/stand-up-comedy-and-nlp-c7d64002520c
+
+Lets pick 5 mens and 5 womens specials from the last 10 years from the most popular stand up specials on [IMDB](https://www.imdb.com/search/title/?title_type=tv_special&genres=comedy&explore=title_type,genres) with no repeating comedians. Was not sure if I should include Hannah Gadsby: [Nanette](https://scrapsfromtheloft.com/2018/07/21/hannah-gadsby-nanette-transcript/) or not because it is too serious
+
+
+Men:
+https://scrapsfromtheloft.com/2020/03/21/bert-kreischer-hey-big-boy-transcript/
+
+https://scrapsfromtheloft.com/2020/03/12/marc-maron-end-times-fun-transcript/
+
+https://scrapsfromtheloft.com/2020/03/01/pete-davidson-alive-from-new-york-transcript/
+
+https://scrapsfromtheloft.com/2019/08/26/dave-chappelle-sticks-stones-transcript/
+
+https://scrapsfromtheloft.com/2018/03/15/ricky-gervais-humanity-transcript/
+
+https://scrapsfromtheloft.com/2020/03/25/tom-segura-ball-hog-transcript/
+
+
+Women:
+https://scrapsfromtheloft.com/2018/09/13/iliza-shlesinger-war-paint-transcript/
+
+```{r}
+tomlinson<-read.table("taylor_tomlinson.txt")
+
+```
+
+https://scrapsfromtheloft.com/2018/07/21/hannah-gadsby-nanette-transcript/
+
+https://scrapsfromtheloft.com/2018/05/15/ali-wong-hard-knock-wife-full-transcript/
+
+https://scrapsfromtheloft.com/2017/06/20/amy-schumer-leather-special-2017-full-transcript/
+
+https://scrapsfromtheloft.com/2019/10/04/nikki-glaser-bangin-transcript/
+
+
+
+
+
